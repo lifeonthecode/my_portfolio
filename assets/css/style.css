@@ -52,6 +52,66 @@ body {
 }
 
 
+/* common css  */
+.section_header {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.section_header img {
+    width: auto;
+    height: 140px;
+    object-fit: cover;
+}
+
+.section_header_title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.section_title {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: var(--f_ubuntu);
+    color: var(--color_3);
+    text-transform: capitalize;
+    line-height: 3.5rem;
+    border-bottom: 2px solid var(--color_4);
+    display: inline-block;
+    padding-bottom: 1rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.section_title::after {
+    position: absolute;
+    content: "";
+    bottom: -8px;
+    left: -15px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--color_4);
+    border-radius: 100%;
+}
+.section_title::before {
+    position: absolute;
+    content: "";
+    bottom: -8px;
+    right: -15px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--color_4);
+    border-radius: 100%;
+    
+}
+
+.section_description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color_2);
+    line-height: 1.25rem;
+}
+
 
 /* header section  */
 .header_section {
@@ -285,9 +345,7 @@ body {
 .banner_wrapper_right p:nth-child(3) {
     margin-bottom: 1.5rem;
 }
-/* .banner_wrapper_right:last-child p {
-    margin-top: 1.5rem;
-} */
+
 
 .banner_dev_right_info {
     padding-left: 1rem;
@@ -376,16 +434,6 @@ body {
 
 }
 
-.about_header {
-    position: relative;
-    z-index: 3;
-    text-align: center;
-}
-.about_header img {
-    width: auto;
-    height: 140px;
-    object-fit: cover;
-}
 
 
 .about_container {
@@ -454,6 +502,138 @@ body {
 }
 
 
+
+
+/* skill section  */
+.skill_section {
+    width: 100%;
+    min-height: 830px;
+    /* background-color: #292F36; */
+    background-image: url('/assets/images/bg/skill_imag.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+.skill_section::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    background-color: #292F36;
+    z-index: 2;
+
+}
+
+
+.skill_container {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.skill_dev_info {
+    max-width: 320px;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: var(--color_4);
+    border-radius: .5rem .5rem .5rem .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .8rem;
+    border-left: 10px solid var(--color_7);
+    text-align: center;
+}
+
+
+.skill_dev_info a {
+    font-size: 2rem;
+    color: var(--color_1);
+}
+.skill_dev_info h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color_1);
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+.skill_dev_info h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #43454D;
+    text-transform: capitalize;
+    line-height: 1.25rem;
+}
+
+.skill_technology {
+    margin-top: 4rem;
+}
+
+.skill_technology ul {
+    display: flex;
+    align-items: center;
+    column-gap: 6rem;
+}
+
+.skill_technology ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill_technology ul li a {
+    width: 100px;
+    height: 100px;
+    background-color: var(--color_6);
+    border-radius: 100%;
+    display: block;
+    font-size: 4rem;
+    color: var(--color_2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill_technology ul li:nth-child(2) a {
+    background-color: var(--color_7);
+}
+.skill_technology ul li:nth-child(3) a {
+    background-color: var(--color_8);
+}
+.skill_technology ul li:nth-child(4) a {
+    background-color: #28A9E0;
+}
+
+.skill_technology ul li h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color_6);
+    text-transform: capitalize;
+    line-height: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.skill_technology ul li:nth-child(2) h4 {
+    color: var(--color_7);
+}
+.skill_technology ul li:nth-child(3) h4 {
+    color: var(--color_8);
+}
+.skill_technology ul li:nth-child(4) h4 {
+    color: #28A9E0;
+}
 
 
 
