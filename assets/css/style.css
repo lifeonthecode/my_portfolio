@@ -715,7 +715,7 @@ body {
     align-items: center;
     position: absolute;
     top: 50%;
-    /* left: 0px; */
+    left: 0px;
     transform: translatey(-50%);
     width: 100%;
 }
@@ -729,6 +729,114 @@ body {
     color: var(--color_2) !important;
 }
 
+
+
+/* blog section  */
+.blog_section {
+    width: 100%;
+    min-height: 830px;
+    background-color: var(--color_1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: var(--py) 0rem;
+
+}
+
+.blog_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 0rem;
+    border-top: 1px solid var(--color_2);
+    border-bottom: 1px solid var(--color_2);
+    max-width: 1052px;
+    width: 100%;
+}
+
+.blog_text h4 {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--f_ubuntu);
+    color: var(--color_4);
+    line-height: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+.blog_text p {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--f_ubuntu);
+    color: var(--color_2);
+    line-height: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.blog_text a {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--f_ubuntu);
+    color: var(--color_4);
+    line-height: 1.2rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+.blog_dev_info ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.blog_dev_info ul li {
+    font-size: .8rem;
+    font-weight: 300;
+    color: var(--color_2);
+    line-height: 1rem;
+    text-transform: capitalize;
+
+}
+
+.blog_dev_info ul li span {
+    color: var(--color_4);
+}
+
+
+.blog_btn_box {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.blog_btn_box a {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: var(--color_4);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--color_1);
+    text-transform: capitalize;
+    line-height: 1.5rem;
+    font-family: var(--f_ubuntu);
+    display: inline-block;
+}
+.blog_btn_box button {
+    padding: 1rem 2rem;
+    border: 2px solid var(--color_4);
+    border-radius: 2rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--color_2);
+    text-transform: capitalize;
+    line-height: 1.5rem;
+    font-family: var(--f_ubuntu);
+    display: inline-block;
+}
 
 
 
