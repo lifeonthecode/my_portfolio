@@ -20,3 +20,17 @@ else {
         list_item[1].id = 'active'
     }
 }
+
+
+// mobile menu 
+const menu_bar_icon = document.getElementById('menu_bar_icon');
+const mobile_menu_close = document.getElementById('mobile_menu_close');
+const moble_menu_container = document.getElementById('moble_menu_container');
+
+menu_bar_icon.addEventListener('click', () => {
+    moble_menu_container.classList.add('active')
+    mobile_menu_close.classList.add('active')
+})
+mobile_menu_close.addEventListener('click', () => {
+    moble_menu_container.classList.remove('active')
+})

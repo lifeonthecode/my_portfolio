@@ -117,6 +117,118 @@ body {
 }
 
 
+/* mobile menu  */
+.menu_bar button {
+    font-size: 1.5rem;
+    color: var(--color_2);
+    cursor: pointer;
+}
+
+.mobile_menu_container {
+    position: fixed;
+    top: 0px;
+    left: -500px;
+    width: 0%;
+    height: 100vh;
+    background-color: var(--color_1);
+    padding: 1.25rem;
+    z-index: 17;
+    transition: all .5s ease;
+    overflow: hidden;
+}
+
+.mobile_menu_container.active {
+    left: 0px;
+    width: 100%;
+    overflow: visible;
+}
+
+.menu button {
+    position: absolute;
+    top: 2rem;
+    right: -5rem;
+    font-size: 0rem;
+    color: var(--color_2);
+    cursor: pointer;
+    padding: 1rem;
+    animation: close 4s infinite;
+    transition: all .3s;
+    transition-delay: 2s;
+    background-color: transparent;
+    border: transparent;
+}
+
+.menu button.active {
+    right: 1.25rem;
+    font-size: 1.5rem;
+}
+
+@keyframes close {
+    0% {
+        color: var(--color_2);
+    }
+    10% {
+        color: var(--color_3);
+    }
+    30% {
+        color: var(--color_4);
+    }
+    50% {
+        color: var(--color_5);
+    }
+    70% {
+        color: var(--color_6);
+    }
+    80% {
+        color: var(--color_7);
+    }
+    100% {
+        color: var(--color_8);
+    }
+}
+
+.mobile_menu  {
+    border-bottom: 1px solid var(--color_2);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.mobile_menu li a {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--color_2);
+    text-transform: capitalize;
+    padding: 1rem 0rem;
+    display: block;
+    /* background-color: var(--color_3); */
+}
+
+.list_item#active{
+    color: var(--color_4);
+}
+
+.mobile_social_icons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.mobile_social_icons a {
+    font-size: 1.25rem;
+    color: var(--color_4);
+    display: inline-block;
+    border-bottom: 1px solid var(--color_4);
+
+}
+
+.mobile_social_icons a span {
+    color: var(--color_2);
+    text-transform: capitalize;
+}
+
+
+
+
 /* header section  */
 .header_section {
     position: sticky;
@@ -166,19 +278,15 @@ body {
 .header_social_icons {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .header_social_icons a {
     font-size: 1.25rem;
     color: var(--color_4);
+    display: inline-block;
 }
-.header_social_icons a span{
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--color_2);
-    text-transform: capitalize;
-}
+
 
 /* banner section  */
 .banner_section {

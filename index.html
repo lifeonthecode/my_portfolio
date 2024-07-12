@@ -14,7 +14,27 @@
 </head>
 <body>
 
-    <!-- <p>&lt;div class="html"&gt;</p> -->
+    <!-- mobile menu  -->
+    <div class="mobile_menu_container" id="moble_menu_container">
+        <div class="menu">
+            <button id="mobile_menu_close"><i class="fa-solid fa-xmark"></i></button>
+            <nav>
+                <menu class="mobile_menu">
+                    <li><a href="index.html" class="list_item">Home</a></li>
+                    <li><a href="blog.html" class="list_item">Blogs</a></li>
+                    <li><a href="article.html" class="list_item">Contact</a></li>
+                </menu>
+            </nav>
+        </div>
+
+        <div class="mobile_social_icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i> <span>instagram</span></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i> <span>facebook</span></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i> <span>whatsapp</span></a>
+            <a href="#"><i class="fa-brands fa-github"></i> <span>github</span></a>
+        </div>
+
+    </div>
 
 
     <!-- header section  -->
@@ -25,19 +45,25 @@
                     <a href="index.html">&lt;c/&gt <span>mohammod juwel</span></a>
                 </div>
                 <!-- desktop menu  -->
-                <nav class="d-none d-sm-block">
+                <nav class="d-none d-md-block">
                     <menu class="menu_items" id="menu_items">
                         <li><a href="index.html" class="list_item">Home</a></li>
                         <li><a href="blog.html" class="list_item">Blogs</a></li>
+                        <li><a href="contact.html" class="list_item">Contact</a></li>
                     </menu>
                 </nav>
         
                 <!-- social icons  -->
-                <div class="header_social_icons d-none d-lg-block">
-                    <a href="#"><i class="fa-brands fa-instagram"></i> <span>instagram</span></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i> <span>facebook</span></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i> <span>whatsapp</span></a>
-                    <a href="#"><i class="fa-brands fa-github"></i> <span>github</span></a>
+                <div class="header_social_icons d-none d-lg-flex">
+                    <a href="#"><i class="fa-brands fa-instagram"></i> </a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <!-- menu bar icons  -->
+                <div class="menu_bar d-block d-md-none">
+                    <button id="menu_bar_icon"><i class="fa-solid fa-bars"></i></button>
                 </div>
             </div>
         </div>
