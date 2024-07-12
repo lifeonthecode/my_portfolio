@@ -1,0 +1,81 @@
+.article_section {
+    width: 100%;
+    min-height: 830px;
+    background-color: var(--color_1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--py) 0rem;
+}
+
+.article_container {
+    max-width: 720px;
+    width: 100%;
+    margin: 0rem auto;
+}
+
+.article_wrapper h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--f_ubuntu);
+    color: var(--color_4);
+    line-height: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.article_dev_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article_dev_info {
+    padding: 1rem 1.5rem;
+    border-top:1px solid #43454D ;
+    border-bottom:1px solid #43454D ;
+} 
+
+.article_dev_info a {
+    font-size: 1rem;
+    color: var(--color_1);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 3rem;
+    background-color: var(--color_4);
+    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article_wrapper img {
+    width: 100%;
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 2rem;
+}
+
+.article_wrapper p {
+    font-family: var(--f_ubuntu);
+    font-size: 1rem;
+    color: var(--color_2);
+    font-weight: 300;
+    line-height: 2rem;
+    margin-top: 2rem;
+
+}
+.article_wrapper:last-child p {
+    margin-bottom: 2rem;
+}
+
+.article_wrapper h5 {
+    font-family: var(--f_ubuntu);
+    font-size: 1rem;
+    color: var(--color_4);
+    font-weight: 300;
+    line-height: 2rem;
+    margin-top: 2rem;
+    text-transform: capitalize;
+}
