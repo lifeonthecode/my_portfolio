@@ -3,23 +3,22 @@ const year = new Date().getFullYear();
 current_year.textContent = year;
 
 
-const current_page = window.location.pathname;
-console.log(current_page);
-const list_item = document.querySelectorAll('.list_item');
+// page active 
+const  windowPathname = window.location.pathname;
+const navELLinks = document.querySelectorAll('.nav_link');
 
-if(current_page === '/index.html') {
-    console.log('index.html')
-    if(list_item[0].textContent.toLowerCase() === 'home') {
-        list_item[0].id = 'active'
+navELLinks.forEach( navLinkEl => {
+    // if(navLinkEl.href.includes(windowPathname)) {
+    //     navLinkEl.classList.add('active')
+    // }
+
+    const navLinkUrl = new URL(navLinkEl.href).pathname;
+    if((windowPathname === navLinkUrl) || (windowPathname === '/index.html' && windowPathname === '/')) {
+        navLinkEl.classList.add('active')
     }
-}
-else {
-    console.log('blog.html')
-    if(list_item[1].textContent.toLowerCase() === 'blogs') {
-        // list_item[0].classList.add('active')
-        list_item[1].id = 'active'
-    }
-}
+
+})
+
 
 
 // mobile menu 

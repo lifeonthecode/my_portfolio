@@ -203,9 +203,6 @@ body {
     /* background-color: var(--color_3); */
 }
 
-.list_item#active{
-    color: var(--color_4);
-}
 
 .mobile_social_icons {
     display: flex;
@@ -271,7 +268,7 @@ body {
 
 }
 
-.list_item#active{
+.nav_link.active{
     color: var(--color_4);
 }
 
