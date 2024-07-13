@@ -12,18 +12,10 @@ console.log(navELLinks)
 
 
 navELLinks.forEach( navLinkEl => {
-    if( navLinkEl.href.includes(windowPathname)) {
-        navLinkEl.classList.add('active');
-    }else {
-        navELLinks[0, 4].classList.add('active')
-        // navELLinks[4].classList.add('active')
+    const navLinkUrl = new URL(navLinkEl.href).pathname;
+    if((windowPathname === navLinkUrl) || (windowPathname === '/index.html' && windowPathname === '/')) {
+        navLinkEl.classList.add('active')
     }
-
-
-    // const navLinkUrl = new URL(navLinkEl.href).pathname;
-    // if((windowPathname === navLinkUrl) || (windowPathname === '/index.html' && windowPathname === '/')) {
-    //     navLinkEl.classList.add('active')
-    // }
 
 })
 
