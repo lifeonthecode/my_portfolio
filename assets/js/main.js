@@ -4,7 +4,7 @@ current_year.textContent = year;
 
 
 // page active 
-const  windowPathname = '/index.html' || window.location.pathname;
+const  windowPathname = window.location.pathname || '/index.html' ;
 const navELLinks = document.querySelectorAll('.nav_link');
 
 navELLinks.forEach( navLinkEl => {
@@ -36,12 +36,17 @@ mobile_menu_close.addEventListener('click', () => {
 
 
 
+
 // cv fole download 
-document.getElementById('cv_download').addEventListener('click', () => {
-    const file = '/assets/images/cv/cv.pdf';
-    const link = document.createElement('a');
-    link.download = 'cv.pdf';
-    link.href = file;
-    link.click();
-    link.remove()
-});
+if(windowPathname === '/index.html') {
+    document.getElementById('cv_download').addEventListener('click', () => {
+        const file = '/assets/images/cv/cv.pdf';
+        const link = document.createElement('a');
+        link.download = 'cv.pdf';
+        link.href = file;
+        link.click();
+        link.remove()
+    });
+
+}
+

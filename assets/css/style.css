@@ -641,7 +641,7 @@ body {
 .skill_section {
     width: 100%;
     min-height: 830px;
-    background-image: url('/assets/images/bg/skill_imag.jpg.jpg');
+    background-image: url('../images/bg/skill_imag.jpg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
