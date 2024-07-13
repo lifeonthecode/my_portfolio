@@ -116,7 +116,7 @@ body {
     line-height: 1.25rem;
 }
 
-.subscribe_btn {
+.subscribe_btn_outline {
     padding: 1rem 2rem;
     border: 2px solid var(--color_4);
     border-radius: 2rem;
@@ -128,6 +128,19 @@ body {
     font-family: var(--f_ubuntu);
     display: inline-block;
 }
+.subscribe_btn {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: var(--color_4);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--color_1);
+    text-transform: capitalize;
+    line-height: 1.5rem;
+    font-family: var(--f_ubuntu);
+    display: inline-block;
+}
+
 
 
 /* mobile menu  */
@@ -441,14 +454,14 @@ body {
     }
 }
 
-.banner_left_wrapper button {
+.banner_left_wrapper > button {
     font-size: 1.25rem;
     font-weight: 400;
     font-family: var(--f_ubuntu);
     color: var(--color_1);
     text-transform: capitalize;
-    background-color: var(--color_2);
-    padding: 1rem 2rem;
+    background-color: var(--color_4);
+    padding: 1rem 2.5rem;
     border-radius: 2rem;
     display: flex;
     align-items: center;
@@ -929,18 +942,6 @@ body {
     margin-top: 4rem;
 }
 
-.blog_btn_box a {
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    background-color: var(--color_4);
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: var(--color_1);
-    text-transform: capitalize;
-    line-height: 1.5rem;
-    font-family: var(--f_ubuntu);
-    display: inline-block;
-}
 
 
 

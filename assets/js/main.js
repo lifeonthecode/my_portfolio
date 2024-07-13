@@ -29,7 +29,19 @@ const moble_menu_container = document.getElementById('moble_menu_container');
 menu_bar_icon.addEventListener('click', () => {
     moble_menu_container.classList.add('active')
     mobile_menu_close.classList.add('active')
-})
+});
 mobile_menu_close.addEventListener('click', () => {
     moble_menu_container.classList.remove('active')
-})
+});
+
+
+
+// cv fole download 
+document.getElementById('cv_download').addEventListener('click', () => {
+    const file = '/assets/images/cv/cv.pdf';
+    const link = document.createElement('a');
+    link.download = 'cv.pdf';
+    link.href = file;
+    link.click();
+    link.remove()
+});
