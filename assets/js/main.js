@@ -4,13 +4,21 @@ current_year.textContent = year;
 
 
 // page active 
-const  windowPathname = window.location.pathname || '/index.html' ;
+const  windowPathname = window.location.pathname;
 const navELLinks = document.querySelectorAll('.nav_link');
+console.log(navELLinks)
+
+
+
 
 navELLinks.forEach( navLinkEl => {
     if( navLinkEl.href.includes(windowPathname)) {
-        navLinkEl.classList.add('active')
+        navLinkEl.classList.add('active');
+    }else {
+        navELLinks[0, 4].classList.add('active')
+        // navELLinks[4].classList.add('active')
     }
+
 
     // const navLinkUrl = new URL(navLinkEl.href).pathname;
     // if((windowPathname === navLinkUrl) || (windowPathname === '/index.html' && windowPathname === '/')) {
