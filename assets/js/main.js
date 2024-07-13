@@ -4,11 +4,11 @@ current_year.textContent = year;
 
 
 // page active 
-const  windowPathname = window.location.pathname;
+const  windowPathname = '/index.html' || window.location.pathname;
 const navELLinks = document.querySelectorAll('.nav_link');
 
 navELLinks.forEach( navLinkEl => {
-    if(navLinkEl.href.includes(windowPathname)) {
+    if( navLinkEl.href.includes(windowPathname)) {
         navLinkEl.classList.add('active')
     }
 
