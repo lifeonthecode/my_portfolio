@@ -1,0 +1,17 @@
+.contact_form_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem 3rem;
+}
+
+.contact_form_container div {
+    width: 100%;
+}
+
+
+.google_map #iframe {
+    min-width: 500px;
+    min-height: 500px;
+    object-fit: cover;
+}

@@ -7,6 +7,9 @@
 /* // Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 
+    .input_container {
+        column-gap: 4rem;
+    }
 }
 
 /* // Medium devices (tablets, less than 992px) */
@@ -89,10 +92,22 @@
         font-size: 1.25rem !important;
     }
 
+    .contact_form_container {
+        flex-direction: column;
+    }
+
+
     .footer_container {
         justify-content: center;
         flex-direction: column;
         row-gap: 1.5rem;
+    }
+
+
+    .google_map #iframe {
+        min-width: 100%;
+        min-height: 300px;
+        object-fit: cover;
     }
 }
 
@@ -198,6 +213,9 @@
         width: 100%;
     }
 
+    .contact_form_container {
+        flex-direction: column;
+    }
 
     .form_container .form_title {
         font-size: 1.2rem;
@@ -222,4 +240,6 @@
     .copyright {
         text-align: center;
     }
+
+    
 }

@@ -8,14 +8,14 @@ const  windowPathname = window.location.pathname;
 const navELLinks = document.querySelectorAll('.nav_link');
 
 navELLinks.forEach( navLinkEl => {
-    // if(navLinkEl.href.includes(windowPathname)) {
-    //     navLinkEl.classList.add('active')
-    // }
-
-    const navLinkUrl = new URL(navLinkEl.href).pathname;
-    if((windowPathname === navLinkUrl) || (windowPathname === '/index.html' && windowPathname === '/')) {
+    if(navLinkEl.href.includes(windowPathname)) {
         navLinkEl.classList.add('active')
     }
+
+    // const navLinkUrl = new URL(navLinkEl.href).pathname;
+    // if((windowPathname === navLinkUrl) || (windowPathname === '/index.html' && windowPathname === '/')) {
+    //     navLinkEl.classList.add('active')
+    // }
 
 })
 
